@@ -50,11 +50,11 @@ const friendsWithHighstAge = complicatedObject.friends.reduce((oldestFriend, fri
     return friend
    }else{
     return oldestFriend
-   }
+}
 },{age:0})
 
 console.log(friendsWithHighstAge.address)
 
 const moreThanThreeHobbies = complicatedObject.friends.filter(friend=> friend.hobbies.length >=3).map(friend => friend.name)
 
-// console.log (moreThanThreeHobbies)
+// console.log (moreThanThreeHobbies
