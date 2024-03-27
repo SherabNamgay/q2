@@ -6,7 +6,7 @@ exports.up = function(knex) {
   return knex.schema
     .createTable('users', (table) => {
       table.increments();
-      table.string('username',128).notNullable();
+      table.string('user_name',128).notNullable();
       table.string('email',128).notNullable();
     })
     .createTable('accounts', (table) =>{
@@ -40,5 +40,4 @@ exports.down = function(knex) {
     .dropTable('income')
     .dropTable('accounts')
     .dropTable('users')
-  
 };
